@@ -23,9 +23,13 @@
  */
 function __autoload($className)
 {
+	
+	
     if (is_file(dirname(__FILE__) . '/class_' . $className . '.php')) {
-        include_once dirname(__FILE__) . '/class_' . $className . '.php';
+      $name =   include_once dirname(__FILE__) . '/class_' . $className . '.php';
+       
         return true;
     }
+    
     return false;
 }

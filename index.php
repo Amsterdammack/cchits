@@ -15,7 +15,8 @@
  * @link     http://gitorious.net/cchits-net Version Control Service
  */
 
-require_once dirname(__FILE__) . '/CLASSES/autoloader.php';
+
+require_once __DIR__. '/CLASSES/autoloader.php';
 
 $generator = microtime(true);
 
